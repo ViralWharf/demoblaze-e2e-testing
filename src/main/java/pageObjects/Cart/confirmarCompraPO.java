@@ -3,26 +3,24 @@ package pageObjects.Cart;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class confirmarCompraPO {
     private final WebDriver webdriver;
+    private final WebDriverWait wait;
 
     public confirmarCompraPO(WebDriver webdriver) {
         this.webdriver = webdriver;
+        this.wait = new WebDriverWait(webdriver, Duration.ofSeconds(10));
     }
 
-    private final By btn_Checkout_Locator = By.xpath("//button[contains(.,'Checkout')]");
-    private final By label_Price_Backpack_Locator = By.xpath("//div[@class='inventory_item_price'][contains(.,'$29.99')]");
-    private final By label_Price_Bike_Light_Locator = By.xpath("//div[@class='inventory_item_price'][contains(.,'$9.99')]");
+    private final By btn_Order_Locator = By.xpath("//button[contains(.,'Place Order')]");
 
-    public void oprimirCheckout() {
-        WebElement btn_Checkout = webdriver.findElement(btn_Checkout_Locator);
-        WebElement label_Price_Backpack = webdriver.findElement(label_Price_Backpack_Locator);
-        WebElement label_Price_Bike_Light = webdriver.findElement(label_Price_Bike_Light_Locator);
-
-        Assert.assertEquals(label_Price_Backpack.getText(), "$29.99");
-        Assert.assertEquals(label_Price_Bike_Light.getText(), "$9.99");
-        btn_Checkout.click();
+    public void oprimirPlaceOrder() {
+        WebElement btn_Order = wait.until(ExpectedConditions.visibilityOfElementLocated(btn_Order_Locator));
+        btn_Order.click();
     }
 }

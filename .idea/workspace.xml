@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a4e58247-55a0-4467-9b17-d764c9bb2bbc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/Signup/crearUsuarioPO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/crearUsuarioSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test/CrearUsuarioCorrectamente.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/driver/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/driver/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/Cart/confirmarCompraPO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/Cart/confirmarCompraPO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/Checkout/Complete/pantallaDeFinalizacionPO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/Checkout/StepOne/completarFormularioPO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/Checkout/StepOne/completarFormularioPO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/Checkout/StepTwo/finalizarCompraPO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/Checkout/StepTwo/finalizarCompraPO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/Inventory/agregarProductosPO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/Inventory/agregarProductosPO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/Login/iniciarSesionPO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/Login/iniciarSesionPO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Constants_Vars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Constants_Vars.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/agregarProductosSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/agregarProductosSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/completarFormularioSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/completarFormularioSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/confirmarCompraSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/confirmarCompraSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/finalizarCompraSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/finalizarCompraSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/iniciarSesionSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/iniciarSesionSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/pantallaDeFinalizacionSteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/ComprarProductosSatisfactoriamente.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/ComprarProductosSatisfactoriamente.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/driver/DriverFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/driver/DriverFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/Cart/confirmarCompraPO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/Cart/confirmarCompraPO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/Checkout/Complete/pantallaDeFinalizacionPO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/Checkout/StepOne/completarFormularioPO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/Checkout/StepOne/completarFormularioPO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/Checkout/StepTwo/finalizarCompraPO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/Checkout/StepTwo/finalizarCompraPO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/Inventory/agregarProductosPO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/Inventory/agregarProductosPO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/Login/iniciarSesionPO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/Login/iniciarSesionPO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/Constants_Vars.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/Constants_Vars.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/src/test/java/stepDefinitions/agregarProductosSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/src/test/java/stepDefinitions/completarFormularioSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/src/test/java/stepDefinitions/confirmarCompraSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/src/test/java/stepDefinitions/finalizarCompraSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/src/test/java/stepDefinitions/iniciarSesionSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/src/test/java/stepDefinitions/pantallaDeFinalizacionSteps.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2dmCEsH6rj9yhyojXXxW7F7CL4N" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/viral/Code/Accenture/demoblaze-e2e-testing/src/main/java/pageObjects/Login&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/pageObjects/Login" />
+      <recent name="$PROJECT_DIR$/src/main/java/pageObjects" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Cucumber Java.Feature: ComprarProductosSatisfactoriamente">
+    <configuration name="Feature: ComprarProductosSatisfactoriamente" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/test/ComprarProductosSatisfactoriamente.feature" />
+      <option name="GLUE" value="stepDefinitions src.test.java.stepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="demoblaze-e2e-testing" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: ComprarProductosSatisfactoriamente" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: CrearUsuarioCorrectamente" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/test/CrearUsuarioCorrectamente.feature" />
+      <option name="GLUE" value="stepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="demoblaze-e2e-testing" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: CrearUsuarioCorrectamente" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Verificar el flujo completo de compra para productos de la misma categoría -  - Example n°1 (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/test/ComprarProductosSatisfactoriamente.feature:15" />
+      <option name="GLUE" value="stepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="demoblaze-e2e-testing" />
+      <option name="NAME_FILTER" value="^Verificar el flujo completo de compra para productos de la misma categoría$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verificar el flujo completo de compra para productos de la misma categoría$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Verificar el flujo completo de compra para productos de la misma categoría -  - Example n°1" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Verificar el flujo completo de compra para productos de la misma categoría -  - Example n°1" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/test/ComprarProductosSatisfactoriamente.feature:14" />
+      <option name="GLUE" value="stepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="demoblaze-e2e-testing" />
+      <option name="NAME_FILTER" value="^Verificar el flujo completo de compra para productos de la misma categoría$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verificar el flujo completo de compra para productos de la misma categoría$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Verificar el flujo completo de compra para productos de la misma categoría -  - Example n°1" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Verificar el flujo completo de compra para productos de la misma categoría -  - Example n°4" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/test/ComprarProductosSatisfactoriamente.feature:17" />
+      <option name="GLUE" value="stepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="demoblaze-e2e-testing" />
+      <option name="NAME_FILTER" value="^Verificar el flujo completo de compra para productos de la misma categoría$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verificar el flujo completo de compra para productos de la misma categoría$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Verificar el flujo completo de compra para productos de la misma categoría -  - Example n°4" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cucumber Java.Feature: ComprarProductosSatisfactoriamente" />
+        <item itemvalue="Cucumber Java.Scenario: Verificar el flujo completo de compra para productos de la misma categoría -  - Example n°4" />
+        <item itemvalue="Cucumber Java.Feature: CrearUsuarioCorrectamente" />
+        <item itemvalue="Cucumber Java.Scenario: Verificar el flujo completo de compra para productos de la misma categoría -  - Example n°1 (1)" />
+        <item itemvalue="Cucumber Java.Scenario: Verificar el flujo completo de compra para productos de la misma categoría -  - Example n°1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a4e58247-55a0-4467-9b17-d764c9bb2bbc" name="Changes" comment="" />
+      <created>1710603757777</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1710603757777</updated>
+      <workItem from="1710603759107" duration="2734000" />
+      <workItem from="1710608066461" duration="10254000" />
+      <workItem from="1710618379108" duration="5011000" />
+      <workItem from="1710624431694" duration="1144000" />
+      <workItem from="1710625595900" duration="3093000" />
+      <workItem from="1710628718028" duration="846000" />
+      <workItem from="1710629585585" duration="473000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.AssertionError" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

@@ -3,21 +3,22 @@ package pageObjects.Checkout.StepTwo;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class finalizarCompraPO {
     private final WebDriver webdriver;
+    private final WebDriverWait wait;
 
     public finalizarCompraPO(WebDriver webdriver) {
         this.webdriver = webdriver;
+        this.wait = new WebDriverWait(webdriver, Duration.ofSeconds(10));
     }
 
-    private final By btn_Finish_Locator = By.xpath("//button[@data-test='finish']");
-    private final By label_Total_Locator = By.xpath("//div[@class='summary_info_label summary_total_label']");
+    private final By btn_Finish_Locator = By.xpath("//button[contains(.,'OK')]");
     public void oprimirFinalizarCompra() {
         WebElement btn_Finish = webdriver.findElement(btn_Finish_Locator);
-        WebElement label_Total = webdriver.findElement(label_Total_Locator);
-        Assert.assertEquals(label_Total.getText(), "Total: $43.18");
         btn_Finish.click();
     }
 }

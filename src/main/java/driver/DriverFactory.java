@@ -4,6 +4,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import utils.Constants_Vars;
 
 public class DriverFactory {
@@ -27,8 +29,25 @@ public class DriverFactory {
                 driver = new ChromeDriver(chromeOptions);
                 break;
 
+            case "firefox":
+                WebDriverManager.firefoxdriver().setup();
+                FirefoxOptions firefoxOptions = new FirefoxOptions();
+                driver = new FirefoxDriver(firefoxOptions);
+                break;
+
             default:
                 throw new IllegalArgumentException("Navegador no soportado: " + browser);
+        }
+    }
+
+    static {
+        Runtime.getRuntime().addShutdownHook(new Thread(DriverFactory::closeDriver));
+    }
+
+    private static void closeDriver() {
+        if (driver != null) {
+            driver.quit();
+            driver = null;
         }
     }
 }

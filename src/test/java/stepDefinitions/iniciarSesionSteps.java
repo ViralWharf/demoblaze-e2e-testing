@@ -1,4 +1,4 @@
-package src.test.java.stepDefinitions;
+package stepDefinitions;
 
 import driver.DriverFactory;
 import io.cucumber.java.en.Given;
@@ -22,12 +22,13 @@ public class iniciarSesionSteps {
 
     @When("Ingresa las credenciales")
     public void ingresa_las_credenciales() {
+        iniciarSesionPO.seleccionarLogin();
         iniciarSesionPO.ingresarCredenciales(Constants_Vars.USER, Constants_Vars.PASSWORD);
     }
 
     @Then("Se inicio sesion correctamente")
     public void se_inicio_sesion_correctamente() {
         String actualTitle = webdriver.getTitle();
-        Assert.assertEquals(actualTitle, "Swag Labs", "El título de la página no coincide con el esperado");
+        Assert.assertEquals(actualTitle, "STORE", "El título de la página no coincide con el esperado");
     }
 }

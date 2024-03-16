@@ -1,13 +1,14 @@
-# Prueba Técnica Devsu #1: Opción 2 de automatización de Pruebas E2E
+# Prueba Técnica Accenture #1: Prueba E2E
 
-¡Hola! Este es el proyecto de automatización que incluye el segundo escenario propuesto en la prueba técnica E2E para Devsu.
+¡Hola! Este es el proyecto de automatización de Accenture, contiene dos escenarios, uno donde se crea un usuario, y el otro donde se completa el flujo de compra.
 
 ## Descripción
 
-El Proyecto E2E Testing para Devsu se realizó en la página SauceDemo y es una suite de pruebas automatizadas diseñada para verificar la funcionalidad principal de comprar dos productos. Utilizando Java, Cucumber y Selenium WebDriver, la suite se enfoca en validar los procesos clave como el inicio de sesión, la navegación por productos, la gestión del carrito de compras y el proceso de pago.
+El Proyecto E2E Testing se realizó en la página Demoblaze y es una suite de pruebas automatizadas diseñada para verificar la funcionalidad principal de comprar productos de diferente categoría. Utilizando Java, Cucumber y Selenium WebDriver, la suite se enfoca en validar los procesos clave como el inicio de sesión, la navegación por productos, la gestión del carrito de compras y el proceso de pago.
 
 ## Funcionalidades Principales
 - Inicio de sesión de usuario.
+- Creación de un nuevo usuario.
 - Navegación por las páginas de productos.
 - Selección y adición de productos al carrito de compras.
 - Proceso de pago y confirmación de pedidos.
@@ -15,7 +16,7 @@ El Proyecto E2E Testing para Devsu se realizó en la página SauceDemo y es una 
 ## Requisitos Previos
 - Java Development Kit (JDK) 8 o superior.
 - Maven.
-- Google Chrome.
+- Google Chrome o Firefox.
 - El proyecto se creó en IntelliJ, entonces se recomienda usarlo.
 
 ## Ejecución
@@ -23,8 +24,10 @@ El Proyecto E2E Testing para Devsu se realizó en la página SauceDemo y es una 
 El proyecto está bajo un patrón de diseño POM, por lo que para ejecutar toda su funcionalidad, solo basta con lo siguiente:
 
 1. Clona el repositorio: \
-   `git clone https://github.com/ViralWharf/saucedemo-e2e-testing`
-2. Abre y ejecuta el feature [ComprarProductosSatisfactoriamente.feature](src%2Ftest%2Fjava%2Ftest%2FComprarProductosSatisfactoriamente.feature), se ubica en `src/test/java/test/ComprarProductosSatisfactoriamente.feature`.
+   `git clone https://github.com/ViralWharf/demoblaze-e2e-testing`
+2. Abre y ejecuta el feature algunos de los siguientes features:
+   1. [ComprarProductosSatisfactoriamente.feature](src%2Ftest%2Fjava%2Ftest%2FComprarProductosSatisfactoriamente.feature)
+   2. [CrearUsuarioCorrectamente.feature](src%2Ftest%2Fjava%2Ftest%2FCrearUsuarioCorrectamente.feature)
 3. ¡Comprueba los resultados!
 
 

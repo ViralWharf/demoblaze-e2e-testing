@@ -1,4 +1,4 @@
-package src.test.java.stepDefinitions;
+package stepDefinitions;
 
 import driver.DriverFactory;
 import io.cucumber.java.en.When;
@@ -12,6 +12,6 @@ public class confirmarCompraSteps {
 
     @When("Se confirma la compra")
     public void confirmarCompraPO() {
-        confirmarCompraPO.oprimirCheckout();
+        confirmarCompraPO.oprimirPlaceOrder();
     }
 }

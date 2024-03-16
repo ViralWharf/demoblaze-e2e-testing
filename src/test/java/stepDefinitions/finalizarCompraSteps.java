@@ -1,7 +1,7 @@
-package src.test.java.stepDefinitions;
+package stepDefinitions;
 
 import driver.DriverFactory;
-import io.cucumber.java.en.When;
+import io.cucumber.java.en.Then;
 import org.openqa.selenium.WebDriver;
 import pageObjects.Checkout.StepTwo.finalizarCompraPO;
 
@@ -9,8 +9,8 @@ public class finalizarCompraSteps {
     WebDriver webdriver = DriverFactory.getDriver();
     private final finalizarCompraPO finalizarCompraPO = new finalizarCompraPO(webdriver);
 
-    @When("El usuario finaliza la compra")
-    public void El_usuario_finaliza_la_compra(){
+    @Then("Se confirma la compra correctamente")
+    public void se_confirma_la_compra_correctamente(){
         finalizarCompraPO.oprimirFinalizarCompra();
     }
 }

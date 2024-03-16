@@ -1,46 +1,70 @@
 package pageObjects.Inventory;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+
+import java.time.Duration;
 
 public class agregarProductosPO {
     private final WebDriver webdriver;
+    private final WebDriverWait wait;
 
     public agregarProductosPO(WebDriver webdriver) {
         this.webdriver = webdriver;
+        this.wait = new WebDriverWait(webdriver, Duration.ofSeconds(10));
     }
 
-    private final By btn_Add_Backpack_Locator = By.xpath("//button[@data-test='add-to-cart-sauce-labs-backpack']");
-    private final By label_Title_Backpack_Locator = By.xpath("//div[@class='inventory_item_name '][contains(.,'Sauce Labs Backpack')]");
-    private final By label_Description_Backpack_Locator = By.xpath("//div[@class='inventory_item_desc'][contains(.,'carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.')]");
+    private final By btn_Cart_Locator = By.xpath("//a[contains(.,'Cart')]");
+    private final By btn_Add_Cart_Locator = By.xpath("//a[contains(.,'Add to cart')]");
 
-    private final By btn_Add_Bike_Light_Locator = By.xpath("//button[@name='add-to-cart-sauce-labs-bike-light']");
-    private final By label_Title_Bike_Light_Locator = By.xpath("//div[@class='inventory_item_name '][contains(.,'Sauce Labs Bike Light')]");
-    private final By label_Description_Bike_Light_Locator = By.xpath("(//div[@class='inventory_item_desc'])[2]");
-    private final By btn_Cart_Locator = By.xpath("//a[@class='shopping_cart_link']");
+    public void seleccionarProductos(String category, String product, String price) {
+        final String btn_Category_Locator = String.format("//a[contains(.,'%s')]", category);
+        final By selector_Category_locator = By.xpath(btn_Category_Locator);
 
-    public void seleccionarProductos() {
-        WebElement btn_Add_Backpack = webdriver.findElement(btn_Add_Backpack_Locator);
-        WebElement label_Title_Backpack = webdriver.findElement(label_Title_Backpack_Locator);
-        WebElement label_Description_Backpack = webdriver.findElement(label_Description_Backpack_Locator);
+        final String btn_Product_Locator = String.format("//a[contains(.,'%s')]", product);
+        final By selector_Product_locator = By.xpath(btn_Product_Locator);
 
-        WebElement btn_Add_Bike_Light = webdriver.findElement(btn_Add_Bike_Light_Locator);
-        WebElement label_Title_Bike_Light = webdriver.findElement(label_Title_Bike_Light_Locator);
-        WebElement label_Description_Bike_Light = webdriver.findElement(label_Description_Bike_Light_Locator);
+        final String btn_Price_Locator = String.format("//h5[contains(.,'%s')]", price);
 
-        Assert.assertEquals(label_Title_Backpack.getText(), "Sauce Labs Backpack");
-        Assert.assertEquals(label_Title_Bike_Light.getText(), "Sauce Labs Bike Light");
-        Assert.assertEquals(label_Description_Backpack.getText(), "carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.");
-        Assert.assertEquals(label_Description_Bike_Light.getText(), "A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included.");
+        String lblCategory = String.valueOf(webdriver.findElement(By.xpath(btn_Category_Locator)).getText());
+        assert lblCategory.equals(category);
 
-        btn_Add_Backpack.click();
-        btn_Add_Bike_Light.click();
+        String lblProduct = String.valueOf(webdriver.findElement(By.xpath(btn_Product_Locator)).getText());
+        assert lblProduct.equals(product);
+
+        String lblPrice = String.valueOf(webdriver.findElement(By.xpath(btn_Price_Locator)).getText());
+        assert lblPrice.equals(price);
+
+        try {
+            WebElement btn_Category = wait.until(ExpectedConditions.elementToBeClickable(selector_Category_locator));
+            btn_Category.click();
+
+        } catch (StaleElementReferenceException e) {
+            WebElement btn_Category = wait.until(ExpectedConditions.elementToBeClickable(selector_Category_locator));
+            btn_Category.click();
+        }
+
+        WebElement btn_Product = wait.until(ExpectedConditions.elementToBeClickable(selector_Product_locator));
+        btn_Product.click();
     }
 
     public void seleccionarCarrito() {
-        WebElement btn_Cart = webdriver.findElement(btn_Cart_Locator);
+        WebElement btn_Cart = wait.until(ExpectedConditions.elementToBeClickable(btn_Cart_Locator));
         btn_Cart.click();
+    }
+
+    public void agregarProductoAlCarrito() {
+        WebElement btn_Add_Cart = wait.until(ExpectedConditions.elementToBeClickable(btn_Add_Cart_Locator));
+        btn_Add_Cart.click();
+    }
+
+    public void validarPopUp(){
+        wait.until(ExpectedConditions.alertIsPresent());
+        Alert popUp = webdriver.switchTo().alert();
+        String mensajePopUp = popUp.getText();
+        Assert.assertEquals(mensajePopUp, "Product added.", "El mensaje del PopUp no coincide con el esperado");
+        popUp.accept();
     }
 }
