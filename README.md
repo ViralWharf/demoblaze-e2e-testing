@@ -1,4 +1,4 @@
-# Prueba Técnica Accenture #1: Prueba E2E
+# Prueba Técnica Accenture: Prueba E2E
 
 ¡Hola! Este es el proyecto de automatización de Accenture, contiene dos escenarios, uno donde se crea un usuario, y el otro donde se completa el flujo de compra.
 
@@ -29,5 +29,9 @@ El proyecto está bajo un patrón de diseño POM, por lo que para ejecutar toda 
    1. [ComprarProductosSatisfactoriamente.feature](src%2Ftest%2Fjava%2Ftest%2FComprarProductosSatisfactoriamente.feature)
    2. [CrearUsuarioCorrectamente.feature](src%2Ftest%2Fjava%2Ftest%2FCrearUsuarioCorrectamente.feature)
 3. ¡Comprueba los resultados!
+
+## Resultados!
+<img width="1399" alt="image" src="https://github.com/ViralWharf/demoblaze-e2e-testing/assets/100390417/c6705f52-8eb2-4320-b939-348f908d945e">
+
 
 
