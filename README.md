@@ -1,6 +1,6 @@
-# Prueba Técnica Accenture: Prueba E2E
+# Prueba E2E en Demoblaze
 
-¡Hola! Este es el proyecto de automatización de Accenture, contiene dos escenarios, uno donde se crea un usuario, y el otro donde se completa el flujo de compra.
+¡Hola! Este proyecto de automatización contiene dos escenarios, uno donde se crea un usuario, y el otro donde se completa el flujo de compra.
 
 ## Descripción
 
